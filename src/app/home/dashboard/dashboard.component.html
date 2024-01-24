@@ -1,0 +1,143 @@
+<body>
+    <div class="container-nav-bar">
+        <app-nav-bar></app-nav-bar>
+    </div>
+
+    <div class="container-options">
+        <div class="row align-items-center">
+
+            <div class="row d-flex justify-content-center mt-5 mb-5">
+            <!--Lado izquiero con filas-->
+            <div class="col-5">
+                <!--Información del usuario-->
+                <div class="row info-user">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img src="../../../assets/logo-user.png" alt="logo-xtrim" width="80" height="35"
+                                class="img-fluid rounded-circle" alt="Imagen de perfil">
+                        </div>
+                        <div class="col-auto">
+                            <h4 class="mb-0 title-name"><b>¡Hola {{userToShow.user_name}}!</b></h4>
+                        </div>
+                        <div class="col text-end date">
+                            <p class="mb-0">Miércoles, 24 de enero del 2024</p>
+                            <p class="mb-0">13:05 pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Mis cuentas-->
+                <div class="row accounts mt-2">
+                    <h5 class="title-accounts"> Mis cuentas</h5>
+
+                    <div class="all-accounts mt-1 mb-1">
+                        <small><b>Todas mis cuentas</b></small>
+                    </div>
+
+                    <!-- Tarjeta de cuenta-->
+                    <div class="card w-50 mb-3">
+                        <div class="purple-stripe mb-3"></div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><b>Cuenta No.</b></span>
+                                <span><b>{{userToShow.account_number}}</b></span>
+                            </div>
+                            <small class="mb-1">{{ userToShow.province.toUpperCase() }}, {{ userToShow.city.toUpperCase() }}, {{ userToShow.parish.toUpperCase() }}</small>
+
+                            <h5 class="mt-3 money">${{userToShow.balance}}</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <small>Valor pendiente</small>
+                                <a href="#" class="manage"><b>Gestionar </b> <fa-icon
+                                        [icon]="iconArrowRight"></fa-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Opciones de conulta y visitar tienda-->
+                <div class="row d-flex sub-options mt-2 justify-content-space-between">
+                    <!--Opción turnos-->
+                    <div class="col-6 option-turn">
+                        <div class="row mt-3 mb-1">
+                            <div class="col-2 container-icon">
+                                <fa-icon [icon]="iconCalendar"></fa-icon>
+                            </div>
+                            <div class="col-10">
+                                <div class="info">
+                                    <h6><b>Revisa tu turno de instalación</b></h6>
+                                    <p class="description mt-1">Consulta la fecha y hora de tu instalación</p>
+                                </div>
+                                <div class="view-turn">
+                                    <small><b>Ver turno </b><fa-icon [icon]="iconArrowRight"></fa-icon></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Opción tienda-->
+                    <div class="col-6 option-store">
+                        <div class="row mt-3 mb-1">
+                            <div class="col-2 container-icon">
+                                <fa-icon [icon]="iconCalendar"></fa-icon>
+                            </div>
+                            <div class="col-10">
+                                <div class="info">
+                                    <h6><b>Visita Tienda Xtrim</b></h6>
+                                    <p class="description mt-1">Revisa nuestro catálogo y obtén ofertas exclusivas</p>
+                                </div>
+                                <div class="view-turn">
+                                    <small><b>Ir ahora </b><fa-icon [icon]="iconArrowRight"></fa-icon></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Publicidad-->
+                <div class="row mt-2">
+                    <div class="col">
+                        <img src="../../../assets/publicidad.png" class="img-fluid rounded-custom" alt="publicidad-xtrem">
+                    </div>
+                </div>
+            </div>
+
+            <!--Clumna del lado derecho-->
+            <div class="col-2 mx-2">
+                <!--Publicidades con promociones-->
+                <div class="row promotions mb-2">
+                    <h6 class="mt-2 mb-3"><b>Promociones</b></h6>
+                    <div class="row">
+                        <img src="../../../assets/publicidad-2.jpg" class="img-fluid rounded-custom mb-2" alt="publicidad-xtrem">
+                        <img src="../../../assets/publicidad-3.jpg" class="img-fluid rounded-custom" alt="publicidad-xtrem">
+                    </div>
+                </div>
+
+                <!--Contacto-->
+                <div class="row contact">
+                    <h6 class="mt-2 mb-3"><b>Contáctanos</b></h6>
+                    <div class="call-center mb-3">
+                        <p><b>Call center</b></p>
+                        <p>Llama al <b>04 600 4000</b> y para resolver todas tus necesidades.</p>
+                    </div>
+                    <div class="virtual-assesor mb-2">
+                        <p><b>Call center</b></p>
+                        <p>¡Habla con Marce por <b>whatsapp</b> y soluciona cualquier duda!</p>
+                    </div>
+                    <div class="agents mb-2">
+                        <p><b>Call center</b></p>
+                        <p>Acércate a tu agencia más cercana, revisa nuestros <b>centros de atención <fa-icon [icon]="iconOpenLink"></fa-icon></b></p>
+                    </div>
+                    <div class="pays mb-2">
+                        <p><b>Call center</b></p>
+                        <p>Revisa nuestra <b>red de pagos <fa-icon [icon]="iconOpenLink"></fa-icon></b></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row fixed-bottom container-footer">
+        <app-footer></app-footer>
+    </div>
+</body>

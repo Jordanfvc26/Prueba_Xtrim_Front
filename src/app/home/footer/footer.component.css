@@ -1,0 +1,16 @@
+.footer{
+    background-color: #ccc;
+    height: 5vh;
+    font-size: 12px;
+}
+
+.info>p{
+    text-decoration: underline !important;
+    cursor: pointer !important;
+}
+
+.info>p:hover{
+    text-decoration: underline !important;
+    cursor: pointer !important;
+    color:rgb(53, 53, 253) !important;
+}

@@ -1,0 +1,20 @@
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="row container-fluid">
+            <div class="col-2 offset-2">
+                <img src="../../../assets/logo-xtrim.png" alt="logo-xtrim" width="80" height="35" class="d-inline-block align-text-top">
+            </div>
+            <div class="col-4">
+                <form class="d-flex justify-content-center icons-nav-bar">
+                   <fa-icon [icon]="iconNotifications"></fa-icon>
+                   <fa-icon [icon]="iconUser" (click)="openModalNewUser(registerNewUser)"></fa-icon>
+                </form>
+            </div>
+        </div>
+    </nav>
+</body>
+
+<!--Modal para registrar un usuario-->
+<ng-template #registerNewUser>
+    <app-new-user></app-new-user>
+ </ng-template>

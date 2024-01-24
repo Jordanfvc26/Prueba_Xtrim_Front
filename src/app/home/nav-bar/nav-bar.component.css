@@ -1,0 +1,9 @@
+.navbar{
+    background-color: #fdd7fd !important;
+}
+
+.icons-nav-bar>fa-icon{
+    font-size: 25px;
+    margin-right: 20px;
+    color: var(--primary-color);
+}
