@@ -5,5 +5,5 @@ import { NewUserComponent } from './home/new-user/new-user.component';
 export const routes: Routes = [
     { path: 'home/dashboard', component: DashboardComponent },
     { path: 'home/new-user', component: NewUserComponent },
-    { path: '', redirectTo: 'login', pathMatch: 'full' },
+    { path: '', redirectTo: 'home/dashboard', pathMatch: 'full' },
 ];

@@ -28,7 +28,14 @@ import * as iconosRegular from '@fortawesome/free-regular-svg-icons';
 export class DashboardComponent {
   //Variables
   arrayUsers: UserInfo[] = [];
-  userToShow: UserInfo = {} as UserInfo;
+  userToShow: UserInfo = {
+    account_number: '2204452987',
+    user_name: 'Jordan Vera',
+    province: 'Los  Ríos',
+    city: 'Quevedo',
+    parish: 'Quevedo',
+    balance: '30.10'
+  };
   searchForm!: FormGroup;
 
   //Constructor
