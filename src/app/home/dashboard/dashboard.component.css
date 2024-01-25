@@ -106,8 +106,12 @@
     font-size: 12.5px;
 }
 
-.promotions img{
-    width: 65%;
+.input-group>input{
+    padding: 5px;
+}
+
+.btn-outline-secondary{
+    padding: 5px;
 }
 
 .contact b{

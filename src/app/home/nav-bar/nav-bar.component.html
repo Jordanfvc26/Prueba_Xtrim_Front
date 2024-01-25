@@ -7,14 +7,9 @@
             <div class="col-4">
                 <form class="d-flex justify-content-center icons-nav-bar">
                    <fa-icon [icon]="iconNotifications"></fa-icon>
-                   <fa-icon [icon]="iconUser" (click)="openModalNewUser(registerNewUser)"></fa-icon>
+                   <fa-icon [icon]="iconUser"></fa-icon>
                 </form>
             </div>
         </div>
     </nav>
 </body>
-
-<!--Modal para registrar un usuario-->
-<ng-template #registerNewUser>
-    <app-new-user></app-new-user>
- </ng-template>

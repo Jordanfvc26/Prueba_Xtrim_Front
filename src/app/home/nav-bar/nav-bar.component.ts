@@ -17,14 +17,7 @@ export class NavBarComponent {
 
 
   constructor(
-    // private modal: NgbModal
   ){}
-
-
-  //Método que abre el modal para registrar un nuevo usuario
-  openModalNewUser(registerNewUser: any) {
-    //this.modal.open(registerNewUser, { size: 'md', centered: true });
-  }
 
   //Icons to use
   iconNotifications = iconos.faBell;
